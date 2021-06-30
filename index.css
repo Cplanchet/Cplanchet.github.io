@@ -1,0 +1,199 @@
+@keyframes typer{
+    from {
+        width: 0;
+        visibility:hidden;
+    }
+    to {
+        width:100%;
+        visibility:visible;    
+    }
+}
+@keyframes cursor{
+    from, to {border-color:transparent;}
+    50% {border-color:#00ff22;}
+}
+body{
+    background-color:#1f1f1f;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size:65px;
+    margin-top:0px;
+    padding-top:45vh;
+}
+h2{
+    font-size: 50px;
+    color:rgb(0, 204, 255);
+}
+p{
+    padding-left:10%;
+}
+ul{
+    padding-left:15%;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.section{
+    color: white;
+}
+#navigation{
+    margin-top:-5vh;
+    position:sticky;
+    top:0;
+    height:5vh;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    color:white;
+    text-align:center;
+}
+#navigation ul{
+    margin-top:0px;
+    padding-left:0px;
+}
+#navigation li{
+    height:100%;
+    list-style:none;
+    display:inline-block;
+    padding: 7px 50px;
+    border-left:1px solid rgb(255, 255, 255);
+    border-right:1px solid rgb(255, 255, 255);
+    font-size:initial;
+    cursor:default;
+}
+#navigation li:hover{
+    background-color:rgba(65, 65, 65, 0.5);
+}
+#Title{
+    color:white;
+    text-align:center;
+    min-height: 100vh;
+    background-image: url("res/330px-Fractal_tree.gif");
+    background-repeat:repeat;
+    background-attachment: fixed;
+}
+#about{
+    margin:100px 1% 0px 1%;
+    background-color: #181818;
+    border: 2px white inset;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 5px black;
+}
+#skills{
+    width:70%;
+    margin-top: 100px;
+    margin-left:15%;
+    padding-bottom:50px;
+    background-color:#000000;
+    color:#00ff22;
+    border:#ffffff 2px solid;
+    font-family:'Courier New', Courier, monospace; 
+}
+#skills h2{
+    color:inherit;
+    margin-left:40%;
+}
+#skillsList{
+    list-style-image:url('res/List_Symbol.png');
+}
+.skill-animation{
+    overflow:hidden;
+    white-space: nowrap; 
+    animation: typer 5s steps(100, end) forwards;
+}
+.Cursor{
+    width:15px;
+    overflow:hidden;
+    border-right:#00ff22 solid 2px;
+    animation: cursor 1s infinite;
+}
+.hidden{
+    visibility:hidden;
+}
+#quals{
+    height:500px;
+    margin-top:100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding:30px 5%;
+    background-color: #181818;
+    border: 2px white inset;
+    box-shadow: 5px 5px 5px black;
+}
+#education{
+    height:100%;
+    width: 50%;
+    float:left;
+}
+#experience{
+    height:100%;
+    width:50%;
+    float:left;  
+}
+#affiliations{
+    border-top:none;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 30px 30px;
+    background-color: #181818;
+    border: 2px white inset;
+    box-shadow: 5px 5px 5px black;
+}
+#affiliations h2{
+    margin-top:0px;
+}
+#contact{
+    width:100%;
+    padding-bottom:50px;
+}
+#conInfo{
+    list-style:none;
+    text-align:center;
+    color:white;
+    padding-left:0px;
+}
+#conInfo li{
+    display:inline;
+    padding: 0px 10px;
+}
+@media screen and (max-width: 600px){
+    #quals{
+        border:none;
+        background:none;
+        box-shadow:none;
+    }
+    #experience{
+        margin:0px 0px;
+        height:fit-content;
+        width: 100%;
+        display:block;
+    }
+    #education{
+        margin:0px 0px;
+        width:100%;
+
+    }
+    #affiliations{
+        height:fit-content;
+        margin:600px 0px;
+        background:none;
+        border:none;
+        box-shadow:none;
+
+    }
+    #skills h2{
+        margin-left:30px;
+
+    }
+    .skill-animation{
+        overflow:hidden;
+        white-space: nowrap; 
+        animation: typer 1s steps(100, end) forwards;
+    }
+}
